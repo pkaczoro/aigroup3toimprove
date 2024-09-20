@@ -1,7 +1,11 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.List;
 
-public interface PetStore {
-    public List<String> petsAvailable();
-}
+public class PetStoreImpl implements PetStore {
+    @Override
+    public List<String> petsAvailable() {
+        return Arrays.asList("Buddy", "Whiskers", "Max", "Luna", "Charlie");
+    }
+} 
